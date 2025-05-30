@@ -1,0 +1,7 @@
+<h2>Материалы</h2>
+<ul>
+  <li *ngFor="let item of materials">
+    <strong>{{ item.title }}</strong> ({{ item.type }})<br>
+    <a [href]="item.link">Подробнее</a>
+  </li>
+</ul>

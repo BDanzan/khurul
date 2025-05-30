@@ -1,12 +1,13 @@
 import { Component } from '@angular/core';
 
 /**
- * Контакты
+ * Контакты на главной
  */
 @Component({
-  selector: 'app-contacts',
+  selector: 'app-home-contacts',
   standalone: true,
   templateUrl: './contacts.component.html',
   styleUrl: './contacts.component.css'
 })
-export class ContactsComponent {}
+export class ContactsComponent {
+}

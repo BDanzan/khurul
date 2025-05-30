@@ -1,12 +1,21 @@
 import { Component } from '@angular/core';
 
 /**
- * Материалы
+ * Материалы на главной
  */
 @Component({
-  selector: 'app-material',
+  selector: 'app-home-material',
   standalone: true,
   templateUrl: './material.component.html',
   styleUrl: './material.component.css'
 })
-export class MaterialComponent {}
+export class MaterialComponent {
+  /**
+   * Мок-материалы
+   */
+  materials = [
+    { title: 'Учение Будды', type: 'статья', link: '#' },
+    { title: 'Медитация для начинающих', type: 'видео', link: '#' },
+    { title: 'История хурула', type: 'аудио', link: '#' }
+  ];
+}
