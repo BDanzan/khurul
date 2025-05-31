@@ -4,6 +4,19 @@
  */
 
 const express = require('express')
+const path = require('path')
+
+// middleware
+// const someMiddleware = require('./middleware/someMiddleware')
+
+// routes
+// const someRoutes = require('./routes/someRoutes')
+
+// utils
+// const logger = require('./utils/logger')
+
+// services
+// const someService = require('./services/someService')
 
 /**
  * Экземпляр приложения Express
@@ -17,6 +30,12 @@ const app = express()
  */
 const PORT = process.env.PORT || 3000
 
+// Подключение middleware
+// app.use(someMiddleware)
+
+// Подключение роутов
+// app.use('/api/some', someRoutes)
+
 app.get('/', (req, res) => {
   /**
    * Главная страница
@@ -27,6 +46,11 @@ app.get('/', (req, res) => {
    * @param {import('express').Response} res
    */
   res.send('Сервер работает')
+})
+
+// Обработка 404
+app.use((req, res) => {
+  res.status(404).json({ message: 'Not found' })
 })
 
 app.listen(PORT, () => {

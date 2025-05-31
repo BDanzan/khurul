@@ -1,19 +1,53 @@
-<nav class="navbar navbar-expand-lg navbar-light bg-light">
+<!-- Десктопный навбар (виден только на больших экранах) -->
+<nav id="navbar-desktop" class="navbar navbar-expand-lg navbar-light d-none d-lg-block">
   <div class="container-fluid">
-    <a class="navbar-brand" href="/">Хурул</a>
-    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Переключить навигацию">
-      <span class="navbar-toggler-icon"></span>
-    </button>
-    <div class="collapse navbar-collapse" id="navbarNav">
+    <a class="navbar-brand" href="/">Центральный <br>Хурул</a>
+    <div class="collapse navbar-collapse" id="navbarNavDesktop">
       <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+        <li class="nav-item"><a class="nav-link" href="/">Главная</a></li>
         <li class="nav-item"><a class="nav-link" href="/news">Новости</a></li>
         <li class="nav-item"><a class="nav-link" href="/material">Материалы</a></li>
         <li class="nav-item"><a class="nav-link" href="/events">События</a></li>
         <li class="nav-item"><a class="nav-link" href="/contacts">Контакты</a></li>
-        <li class="nav-item"><a class="nav-link" href="/library">Библиотека</a></li>
-        <li class="nav-item"><a class="nav-link" href="/museum">Музей</a></li>
-        <li class="nav-item"><a class="nav-link" href="/admin">Админка</a></li>
       </ul>
     </div>
+  </div>
+</nav>
+
+<!-- Мобильный навбар внизу экрана (виден только на маленьких экранах) -->
+<nav id="navbar-mobile" class="navbar fixed-bottom navbar-lightd-block d-lg-none">
+  <div class="container-fluid p-0">
+    <ul class="navbar-nav w-100 d-flex flex-row justify-content-around">
+      <li class="nav-item text-center">
+        <a class="nav-link px-1" href="/">
+          <i class="bi bi-house-door"></i><br>
+          <small>Главная</small>
+        </a>
+      </li>
+      <li class="nav-item text-center">
+        <a class="nav-link px-1" href="/news">
+          <i class="bi bi-newspaper"></i><br>
+          <small>Новости</small>
+        </a>
+      </li>
+      <li class="nav-item text-center">
+        <a class="nav-link px-1" href="/material">
+          <i class="bi bi-file-text"></i><br>
+          <small>Материалы</small>
+        </a>
+      </li>
+      <li class="nav-item text-center">
+        <a class="nav-link px-1" href="/events">
+          <i class="bi bi-calendar-event"></i><br>
+          <small>События</small>
+        </a>
+      </li>
+      <li class="nav-item text-center">
+        <a class="nav-link px-1" href="/contacts">
+          <i class="bi bi-person-lines-fill"></i><br>
+          <small>Контакты</small>
+        </a>
+      </li>
+    </ul>
   </div>
 </nav>
